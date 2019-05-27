@@ -34,17 +34,18 @@
   <body>
     <!-- выпадающее меню-->
     <!-- hamburger-->
-    <div class="FgMenu__mainContainer FgMenu__mainContainer--hide FgMenu__mainContainer--blackBg">
+    <div class="FgMenu__mainContainer FgMenu__mainContainer--hide">
       <div class="FgMenu__mainContainer__content">
         <!-- btn-->
-        <div class="FgMenu__btnContainer FgMenu__btnContainer--blackBg FgMenu__btnContainer--xRight">
+        <div class="FgMenu__btnContainer FgMenu__btnContainer--whiteBg FgMenu__btnContainer--xRight">
           <div class="FgMenu__btnContainer__item">
             <div class="FgMenu__btnContainer__item__top"></div>
             <div class="FgMenu__btnContainer__item__mid"></div>
             <div class="FgMenu__btnContainer__item__bottom"></div>
           </div>
         </div>
-        <ul class="FgMenu__mainContainer__content__list">
+        <h2 class="FgMenu__mainContainer__content__title mid-pd-top">Меню</h2>
+        <ul class="FgMenu__mainContainer__content__list std-pd-top">
           <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="about.html">О нас</a></li>
           <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="online-courses.html">Online курсы</a></li>
           <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="learning-process.html">Процесс обучения</a></li>
@@ -57,11 +58,11 @@
     <header class="MainHeader MainHeader--mainPage">
       <div class="MainHeader__content">
         <div class="MainHeader__content__left">
-                    <div class="MainLogo MainLogo--short MainLogo--black"><a class="MainLogo__link" href="index.html">
+                    <div class="MainLogo MainLogo--short MainLogo--black MainLogo--mainHeader"><a class="MainLogo__link" href="index.html">
                         <div class="MainLogo__link__imgContainer"><img class="MainLogo__link__imgContainer__img" src="img/svg/main-logo-black.svg"></div>
                         <div class="MainLogo__link__dscr"><span class="MainLogo__link__dscr__title">Beauty Bohemia</span><span class="MainLogo__link__dscr__text">by Anastasy D</span></div></a></div>
         </div>
-        <div class="MainHeader__content__center">
+        <div class="MainHeader__content__center hidden-xs hidden-sm">
                     <nav class="MainNav MainNav--mainPage">
                       <ul class="MainNav__list">
                         <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="about.html">О нас</a></li>
@@ -73,10 +74,17 @@
                     </nav>
         </div>
         <div class="MainHeader__content__right">
-          <ul class="AuthBtns AuthBtns--mainPage">
-            <li class="AuthBtns__item"><a class="AuthBtns__item__signIn"><span class="AuthBtns__item__signIn__text">Войти</span></a></li>
-            <li class="AuthBtns__item"><a class="AuthBtns__item__signUp">Регистрация</a></li>
+          <ul class="AuthBtns AuthBtns--mainHeader AuthBtns--mainPage">
+            <li class="AuthBtns__item"><a class="AuthBtns__item__signIn"><i class="AuthBtns__item__signIn__ico mdi mdi-login-variant"></i><span class="AuthBtns__item__signIn__text">Войти</span></a></li>
+            <li class="AuthBtns__item"><a class="AuthBtns__item__signUp"><i class="AuthBtns__item__signUp__ico mdi mdi-account-plus"></i><span class="AuthBtns__item__signUp__text">Регистрация</span></a></li>
           </ul>
+          <div class="FgMenu__btnContainer FgMenu__btnContainer--yCenter FgMenu__btnContainer--blackBg FgMenu__btnContainer--xRight hidden-lg hidden-md">
+            <div class="FgMenu__btnContainer__item">
+              <div class="FgMenu__btnContainer__item__top"></div>
+              <div class="FgMenu__btnContainer__item__mid"></div>
+              <div class="FgMenu__btnContainer__item__bottom"></div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -84,7 +92,7 @@
       <section class="startScreen" id="startScreen">
         <div class="startScreen__content">
           <div class="startScreen__content__logo">
-                        <div class="MainLogo"><a class="MainLogo__link" href="index.html">
+                        <div class="MainLogo MainLogo--startScreen"><a class="MainLogo__link" href="index.html">
                             <div class="MainLogo__link__imgContainer"><img class="MainLogo__link__imgContainer__img" src="img/svg/main-logo-white.svg"></div>
                             <div class="MainLogo__link__dscr"><span class="MainLogo__link__dscr__title">Beauty Bohemia</span><span class="MainLogo__link__dscr__text">by Anastasy D</span></div></a></div>
           </div>
@@ -103,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div class="AuthorInfo">
+        <div class="AuthorInfo AuthorInfo--main">
           <div class="AuthorInfo__bg"></div>
           <div class="AuthorInfo__card">
             <div class="AuthorInfo__card__imgContainer">
@@ -118,7 +126,7 @@
           </div>
         </div>
       </section>
-      <div class="container">
+      <div class="container-fluid">
                 <hr class="stdHr stdHr--gradGray">
       </div>
       <section class="big-pd-bottom">
@@ -131,7 +139,7 @@
             гласных и согласных живут рыбные тексты.
           </p>
         </div>
-                <ul class="Courses">
+                <ul class="Courses Courses--mainPage">
                   <li class="Courses__item" style="background-color: #fcf2f1;">
                     <div class="Courses__item__card">
                       <header class="Courses__item__card__header">
@@ -209,15 +217,21 @@
       <section class="big-pd-bottom">
               <ul class="Stock">
                 <li class="Stock__item">
-                  <div class="Stock__item__left">
-                    <div class="Stock__item__left__dscr"><span class="Stock__item__left__dscr__type">Специальное предложение</span><span class="Stock__item__left__dscr__title">Курс «Сам себе визажист»</span></div>
-                    <div class="Stock__item__left__footer"><span class="Stock__item__left__footer__cost">15 000 р.</span></div>
+                  <div class="Stock__item__left" style="background-image:url('img/test.jpg')">
+                    <div class="Stock__item__left__content">
+                      <div class="Stock__item__left__content__dscr"><span class="Stock__item__left__content__dscr__type">Специальное предложение</span><span class="Stock__item__left__content__dscr__title">Курс «Сам себе визажист»</span></div>
+                      <div class="Stock__item__left__content__footer"><span class="Stock__item__left__content__footer__cost">15 000 р.</span>
+                              <a class="ctmBtn Stock__item__left__content__footer__buy">Купить</a><span class="Stock__item__left__content__footer__dscr">Предложение действует до 1 июня 2019 года</span>
+                      </div>
+                    </div>
                   </div>
                   <div class="Stock__item__right" style="background-image:url('img/test.jpg')">
-                    <div class="Stock__item__right__actions">
-                            <a class="ctmBtn">Купить</a>
+                    <div class="Stock__item__right__content">
+                      <div class="Stock__item__right__content__actions">
+                              <a class="ctmBtn Stock__item__right__content__footer__buy">Купить</a>
+                      </div>
+                      <div class="Stock__item__right__content__footer"><span class="Stock__item__right__content__footer__dscr">Предложение действует до 1 июня 2019 года</span></div>
                     </div>
-                    <div class="Stock__item__right__footer"><span class="Stock__item__right__footer__dscr">Предложение действует до 1 июня 2019 года</span></div>
                   </div>
                 </li>
               </ul>
@@ -228,6 +242,7 @@
           <div class="row">
             <div class="col-md-offset-2">
                             <div class="Reviews">
+                              <div class="Reviews__pre"><i class="Reviews__pre__ico mdi mdi-chevron-left"></i></div>
                               <ul class="Reviews__list">
                                 <li class="Reviews__list__item"><a class="Reviews__list__item__card" href="#" style="background-color: #fcf2f1;">
                                     <h4 class="Reviews__list__item__card__title" href="#">Отзыв 1</h4>
@@ -278,6 +293,7 @@
                                   </div>
                                 </li>
                               </ul>
+                              <div class="Reviews__next"><i class="Reviews__next__ico mdi mdi-chevron-right"></i></div>
                             </div>
             </div>
           </div>
@@ -304,12 +320,12 @@
     <!-- основной футер-->
     <footer class="MainFooter">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6 std-pd-bottom-sm std-pd-bottom-xs">
                     <div class="MainLogo MainLogo--short"><a class="MainLogo__link" href="index.html">
                         <div class="MainLogo__link__imgContainer"><img class="MainLogo__link__imgContainer__img" src="img/svg/main-logo-white.svg"></div>
                         <div class="MainLogo__link__dscr"><span class="MainLogo__link__dscr__title">Beauty Bohemia</span><span class="MainLogo__link__dscr__text">by Anastasy D</span></div></a></div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
                     <nav class="MainNav MainNav--footer">
                       <ul class="MainNav__list">
                         <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="about.html">О нас</a></li>
@@ -320,22 +336,21 @@
                       </ul>
                     </nav>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
                     <nav class="MainNav MainNav--footer">
                       <ul class="MainNav__list">
-                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="#">Отзывы</a></li>
-                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="2" href="#">Фотогалерея</a></li>
-                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="3" href="#">Политика конфиденциальности</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="#">Фотогалерея</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="2" href="#">Политика конфиденциальности</a></li>
                       </ul>
                     </nav>
         </div>
       </div>
             <hr class="stdHr stdHr--gradGray">
       <div class="row flex align-items-center">
-        <div class="col-md-6">
+        <div class="col-xs-6">
                     <div class="DefaultCopyright DefaultCopyright--mainCopyright"><span>© 2019 Beauty bogemia</span></div>
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-xs-6 text-right">
                     <div class="SocialLinks SocialLinks--right">
                       <ul class="SocialLinks__list">
                         <li class="SocialLinks__list__item"><a class="SocialLinks__list__item__link" href="#"><img class="SocialLinks__list__item__link__img" src="img/svg/VK.svg"></a></li>
