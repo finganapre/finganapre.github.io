@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Beauty Bohemia</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- libs styles-->
+    <link rel="stylesheet" href="libs/styles/libs.min.css">
+    <!-- libs js-->
+    <script src="libs/scripts/libs.min.js"></script>
+    <!-- custom styles-->
+    <link rel="stylesheet" href="styles/main.min.css">
+    <!-- custom js-->
+    <script src="scripts/main.min.js"></script>
+  </head>
+  <body>
+    <!-- preLoader-->
+    <div class="LoadScreen"><img class="LoadScreen__img" src="img/load.gif"></div>
+    <!-- выпадающее меню-->
+    <!-- hamburger-->
+    <div class="FgMenu__mainContainer FgMenu__mainContainer--hide">
+      <div class="FgMenu__mainContainer__content">
+        <!-- btn-->
+        <div class="FgMenu__btnContainer FgMenu__btnContainer--whiteBg FgMenu__btnContainer--xRight">
+          <div class="FgMenu__btnContainer__item">
+            <div class="FgMenu__btnContainer__item__top"></div>
+            <div class="FgMenu__btnContainer__item__mid"></div>
+            <div class="FgMenu__btnContainer__item__bottom"></div>
+          </div>
+        </div>
+        <h2 class="FgMenu__mainContainer__content__title mid-pd-top">Меню</h2>
+        <ul class="FgMenu__mainContainer__content__list std-pd-top">
+          <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="about.html">О нас</a></li>
+          <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="online-courses.html">Online курсы</a></li>
+          <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="learning-process.html">Процесс обучения</a></li>
+          <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="news.html">Новости</a></li>
+          <li class="FgMenu__mainContainer__content__list__item"><a class="FgMenu__mainContainer__content__list__item__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- шапка сайта-->
+    <header class="MainHeader">
+      <div class="MainHeader__content">
+        <div class="MainHeader__content__left">
+                    <div class="MainLogo MainLogo--short MainLogo--black MainLogo--mainHeader"><a class="MainLogo__link" href="index.html">
+                        <div class="MainLogo__link__imgContainer"><img class="MainLogo__link__imgContainer__img" src="img/svg/main-logo-black.svg"></div>
+                        <div class="MainLogo__link__dscr"><span class="MainLogo__link__dscr__title">Beauty Bohemia</span><span class="MainLogo__link__dscr__text">by Anastasy D</span></div></a></div>
+        </div>
+        <div class="MainHeader__content__center hidden-xs hidden-sm">
+                    <nav class="MainNav">
+                      <ul class="MainNav__list">
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="about.html">О нас</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="2" href="online-courses.html">Online курсы</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="3" href="learning-process.html">Процесс обучения</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="4" href="news.html">Новости</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="5" href="contacts.html">Контакты</a></li>
+                      </ul>
+                    </nav>
+        </div>
+        <div class="MainHeader__content__right">
+          <ul class="AuthBtns AuthBtns--mainHeader">
+            <li class="AuthBtns__item"><a class="AuthBtns__item__signIn"><i class="AuthBtns__item__signIn__ico mdi mdi-login-variant"></i><span class="AuthBtns__item__signIn__text">Войти</span></a></li>
+            <li class="AuthBtns__item"><a class="AuthBtns__item__signUp"><i class="AuthBtns__item__signUp__ico mdi mdi-account-plus"></i><span class="AuthBtns__item__signUp__text">Регистрация</span></a></li>
+          </ul>
+          <div class="FgMenu__btnContainer FgMenu__btnContainer--yCenter FgMenu__btnContainer--whiteBg FgMenu__btnContainer--xRight hidden-lg hidden-md">
+            <div class="FgMenu__btnContainer__item">
+              <div class="FgMenu__btnContainer__item__top"></div>
+              <div class="FgMenu__btnContainer__item__mid"></div>
+              <div class="FgMenu__btnContainer__item__bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="MainContent MainContent--headerPadding">
+      <section class="container big-pd-bottom">
+        <h2 class="std-pd-bottom">Процесс обучения</h2>
+        <p>Текст о процессе обучения</p>
+      </section>
+      <section class="container big-pd-bottom">
+                <ul class="advantages undefined || ''">
+                  <li class="advantages__item">
+                    <div class="advantages__item__imgContainer"><img class="advantages__item__imgContainer__img" src="img/svg/advantages-1.svg"></div>
+                    <div class="advantages__item__dscrContainer">
+                      <p class="advantages__item__dscrContainer__dscr">text 1</p>
+                    </div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item__imgContainer"><img class="advantages__item__imgContainer__img" src="img/svg/advantages-2.svg"></div>
+                    <div class="advantages__item__dscrContainer">
+                      <p class="advantages__item__dscrContainer__dscr">text 2</p>
+                    </div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item__imgContainer"><img class="advantages__item__imgContainer__img" src="img/svg/advantages-3.svg"></div>
+                    <div class="advantages__item__dscrContainer">
+                      <p class="advantages__item__dscrContainer__dscr">text 3</p>
+                    </div>
+                  </li>
+                </ul>
+      </section>
+      <section class="container">
+        <div class="std-pd-bottom">
+                    <hr class="stdHr stdHr--gradGray">
+        </div>
+        <div class="InfoBlock">
+          <div class="InfoBlock__left">
+            <div class="InfoBlock__left__header">
+              <div class="InfoBlock__left__header__numberContainer"><span class="InfoBlock__left__header__numberContainer__number">1</span></div>
+              <h2 class="InfoBlock__left__header__title">Регистрация</h2>
+            </div>
+            <div class="InfoBlock__left__main">
+              <p class="InfoBlock__left__main__text">текст о регистрации</p>
+            </div>
+            <div class="InfoBlock__left__footer">
+              <a class="ctmBtn" href="#">Регистрация</a>
+            </div>
+          </div>
+          <div class="InfoBlock__right"><img class="InfoBlock__right__img" src="img/test.jpg" alt="info img"/></div>
+        </div>
+        <div class="std-pd-y">
+                    <hr class="stdHr stdHr--gradGray">
+        </div>
+      </section>
+      <section class="container">
+        <div class="InfoBlock">
+          <div class="InfoBlock__left">
+            <div class="InfoBlock__left__header">
+              <div class="InfoBlock__left__header__numberContainer"><span class="InfoBlock__left__header__numberContainer__number">2</span></div>
+              <h2 class="InfoBlock__left__header__title">Выбор курса</h2>
+            </div>
+            <div class="InfoBlock__left__main">
+              <p class="InfoBlock__left__main__text">текст о выборе курса</p>
+            </div>
+            <div class="InfoBlock__left__footer">
+              <a class="ctmBtn" href="#">Выбрать курс</a>
+            </div>
+          </div>
+          <div class="InfoBlock__right"><img class="InfoBlock__right__img" src="img/test.jpg" alt="info img"/></div>
+        </div>
+        <div class="std-pd-y">
+                    <hr class="stdHr stdHr--gradGray">
+        </div>
+      </section>
+      <section class="container big-pd-bottom">
+        <div class="InfoBlock">
+          <div class="InfoBlock__left">
+            <div class="InfoBlock__left__header">
+              <div class="InfoBlock__left__header__numberContainer"><span class="InfoBlock__left__header__numberContainer__number">3</span></div>
+              <h2 class="InfoBlock__left__header__title">Изучение уроков</h2>
+            </div>
+            <div class="InfoBlock__left__main">
+              <p class="InfoBlock__left__main__text">текст о процессе обучения</p>
+            </div>
+            <div class="InfoBlock__left__footer">
+              <a class="ctmBtn" href="#">Перейти в личный кабинет</a>
+            </div>
+          </div>
+          <div class="InfoBlock__right"><img class="InfoBlock__right__img" src="img/test.jpg" alt="info img"/></div>
+        </div>
+        <div class="std-pd-top">
+                    <hr class="stdHr stdHr--gradGray">
+        </div>
+      </section>
+      <section class="container">
+        <section class="big-pd-bottom wow fadeIn" data-wow-duration="2s" data-wow-offset="30">
+          <h2 class="smallTitle">Есть вопросы?</h2>
+          <div class="text-center">
+                        <div class="mainContacts">
+                          <ul class="mainContacts__list">
+                            <li class="mainContacts__list__item"><a class="mainContacts__list__item__link" href="tel:88888888888">8 888 888 88 88</a></li>
+                          </ul>
+                        </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- основной футер-->
+    <footer class="MainFooter">
+      <div class="row">
+        <div class="col-md-6 std-pd-bottom-sm std-pd-bottom-xs">
+                    <div class="MainLogo MainLogo--short"><a class="MainLogo__link" href="index.html">
+                        <div class="MainLogo__link__imgContainer"><img class="MainLogo__link__imgContainer__img" src="img/svg/main-logo-white.svg"></div>
+                        <div class="MainLogo__link__dscr"><span class="MainLogo__link__dscr__title">Beauty Bohemia</span><span class="MainLogo__link__dscr__text">by Anastasy D</span></div></a></div>
+        </div>
+        <div class="col-md-3">
+                    <nav class="MainNav MainNav--footer">
+                      <ul class="MainNav__list">
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="about.html">О нас</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="2" href="online-courses.html">Online курсы</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="3" href="learning-process.html">Процесс обучения</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="4" href="news.html">Новости</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="5" href="contacts.html">Контакты</a></li>
+                      </ul>
+                    </nav>
+        </div>
+        <div class="col-md-3">
+                    <nav class="MainNav MainNav--footer">
+                      <ul class="MainNav__list">
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="1" href="#">Фотогалерея</a></li>
+                        <li class="MainNav__list__item"><a class="MainNav__list__item__link" tabindex="2" href="#">Политика конфиденциальности</a></li>
+                      </ul>
+                    </nav>
+        </div>
+      </div>
+            <hr class="stdHr stdHr--gradGray">
+      <div class="row flex align-items-center">
+        <div class="col-xs-6">
+                    <div class="DefaultCopyright DefaultCopyright--mainCopyright"><span>© 2019 Beauty bogemia</span></div>
+        </div>
+        <div class="col-xs-6 text-right">
+                    <div class="SocialLinks SocialLinks--right">
+                      <ul class="SocialLinks__list">
+                        <li class="SocialLinks__list__item"><a class="SocialLinks__list__item__link" href="#"><img class="SocialLinks__list__item__link__img" src="img/svg/VK.svg"></a></li>
+                        <li class="SocialLinks__list__item"><a class="SocialLinks__list__item__link" href="#"><img class="SocialLinks__list__item__link__img" src="img/svg/FB.svg"></a></li>
+                        <li class="SocialLinks__list__item"><a class="SocialLinks__list__item__link" href="#"><img class="SocialLinks__list__item__link__img" src="img/svg/INSTGRM.svg"></a></li>
+                      </ul>
+                    </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
